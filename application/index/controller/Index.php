@@ -1,14 +1,11 @@
 <?php
 namespace app\index\controller;
+use \think\controller;
 
-class Index
+class Index extends controller
 {
-    public function index()
+    public function Index()
     {	
-        return 'mmp';
+        return $this->fetch('index');
     }
-   public function login($id)
-   {
-   	 	return 'nihao:'.$id;
-   }
 }
