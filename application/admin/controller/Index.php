@@ -14,7 +14,7 @@ class Index extends Base
     	$id = input('id');
     	if ($db=db('cate')->find($id)) {
 
-    		return json_encode($db);
+    		return json($db);
     	}else{
     		return $this->error('失败');
     	}

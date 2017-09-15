@@ -1,8 +1,8 @@
 <?php
 namespace app\index\controller;
-use \think\controller;
 
-class Search extends controller
+
+class Search extends Base
 {
     public function index()
     {	

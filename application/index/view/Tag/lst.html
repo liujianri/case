@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Language" content="zh-CN" />
 	<meta name="keywords" content="你我网,圈圈说,汉中,汉中圈圈,你我,如是观,心理,感情,youmew" />
 	<meta name="description" content="你我网，缘自圈圈说，记载着圈圈的生活过往，只为留住那份曾经的感动；圈圈，又名小尤，前半生执著于感情，命途多舛，故孑然一身。" />
-	<title>你我网 </title>
+	<title>大生活 - 你我网 </title>
 	<link rel="stylesheet" rev="stylesheet" href="__PUBLIC__/static/index/style/style.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="/favicon.ico" />
 	<script src="__PUBLIC__/static/index/style/common.js" type="text/javascript"></script>
@@ -27,7 +27,7 @@
 	<div class="post multi-post cate2 auth1">
 	<h4 class="post-date">{$vo.time|date="Y年m月d日",###}</h4>
 	<h2 class="post-title"><a href="{:url('Article/index',array('artid'=>$vo.id))}">{$vo.title}</a></h2>
-	<div class="post-body"><p>{$vo.content}</p>
+	<div class="post-body"><p>{$vo.descs}</p>
 	{if condition="$vo['pic'] neq ''"}
 	<p style="text-indent: 0em;"><a title="" target="_self" href="{:url('Article/index',array('artid'=>$vo.id))}"><img src="__PUBLIC__{$vo.pic}" title="你我网" alt="你我网"/></a></p>
 	{/if}
@@ -43,7 +43,7 @@
 
 	</span></h5>
 	<h6 class="post-footer">
-		发布:圈圈 | 分类:{$catename} | 评论:6 | 浏览:<span id="spn75">{$vo.click}</span>
+		发布:圈圈 | 分类: {$vo.catename}| 评论:6 | 浏览:<span id="spn75">{$vo.click}</span>
 		 | <a href="{:url('Article/index',array('artid'=>$vo.id))}">阅读全文 > </a>
 	</h6>
 	</div> 
